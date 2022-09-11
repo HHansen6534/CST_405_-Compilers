@@ -1,3 +1,6 @@
+//lexer code 
+//Haley Hansen and Dylan Dorough
+
 %option noyywrap
 
 %{
@@ -11,6 +14,8 @@ int chars = 0;
 int lines = 0;
 
 %}
+
+//identifying the tokens 
 
 letter      [a-zA-Z]
 digit       [0-9]
@@ -33,7 +38,9 @@ ws          {delim}+
 								}
 							}
 						}
-						
+
+
+//indentifying the operators and other functions
 "if"	{words++; chars += strlen(yytext);
 		 printf("%s : IF\n", yytext);
 		}	
@@ -173,9 +180,11 @@ int main(int argc, char**argv)
 	#ifdef YYDEBUG
 		yydebug = 1;
 	#endif
-
+//prints that compiler started
 	printf("Compiler started. \n\n");
 
+
+//allows lex analyzer to identify the type of character within any .cmm file
 	if (argc > 1){
 	  if(!(yyin = fopen(argv[1], "r")))
           {
