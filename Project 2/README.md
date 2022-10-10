@@ -7,11 +7,11 @@ We already created a make file that cleans and runs the compiler/parser. Copy an
 
 To clean the files:
 
-''''
+''' bash
 make clean 
 ''''
 
 To run the compiler:
-''''
+''' bash
 make parser
 ''''
