@@ -1,0 +1,6 @@
+
+temp=30
+x=0
+
+temp=30
+temp=30

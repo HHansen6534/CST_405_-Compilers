@@ -1,0 +1,59 @@
+int a;
+int b;
+
+int x;
+int y;
+
+x = 5;
+y = 10;
+
+char ch;
+float m;
+
+int arr [5];
+char arrTwo[5];
+
+void assginChar1(){
+    arrTwo[3] = 'f';
+    arrTwo[4] = 'j';
+}
+
+void assginVal(){
+    a = 15;
+    b = 58 + 5 + 10 * 5;
+}
+
+void assginChar2(){
+    ch = 'f';
+}
+
+void myfuc(){
+    arr[3] = 223;
+    arr[4] = 2332;
+}
+
+void assginFloat(){
+    m = 12.65;
+}
+
+
+assginChar1();
+assginChar2();
+assginVal();
+myfuc();
+
+
+
+if (X>1){
+    write x;
+};
+
+if-else(x<6){
+    write m;
+}else{
+    write y;
+};
+
+
+write ch;
+write arr[3];
